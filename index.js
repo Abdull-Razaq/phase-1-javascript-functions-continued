@@ -1,26 +1,20 @@
 // code your solution here
 
-function saturdayFun(fun = "roller-skate!") {
-    
-    if (fun === "roller-skate") {
-        
-        return("This Saturday, I want to ${fun}");
+//Saturday fun function
 
-    } else {
-        return("This Saturday, I want to bahte my dog");
+function saturdayFun(activity="roller-skate") {
+    return `This Saturday, I want to ${activity}!`
+  }
+
+//Monday work function
+
+let mondayWork = function(activity="go to the office") {
+    return `This Monday, I will ${activity}.`
+  }
+
+// Wrap adjective function
+let wrapAdjective = function(style="*") {
+    return function(adjective="special") {
+      return `You are ${style}${adjective}${style}!`
     }
-    
-}
-
-
-function mondayWork(work = "go to the office") {
-
-    return("This Monday, I will ${work}")
-    
-}
-
-function wrapAdjective(adjective="*"){
-    return function(word="special"){
-        return `You are ${adjective}${word}${adjective}!`
-    }
- }
+  }
